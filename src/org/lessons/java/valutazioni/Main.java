@@ -9,7 +9,7 @@ public class Main {
 		
 		for(int i = 1; i <= studenti.length; i++) {
 			studenti[i - 1] = new Studente(i, rnd.nextInt(0, 101), rnd.nextDouble(0, 5.1));
-			System.out.println(studenti[i - 1].id + " | " + studenti[i - 1].assenze + " | " + String.format("%02f", studenti[i - 1].avg) + "\n-------------------");
+			studenti[i - 1].getStudente();
 		}
 	}
 } 
